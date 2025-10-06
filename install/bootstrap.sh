@@ -1,7 +1,9 @@
 #!/bin/sh
 
 WORKDIR=~/.dotfiles/install
-chdir $WORKDIR
+CURRENT_DIR=$(pwd)
+
+cd $WORKDIR
 
 DISTRO=$1
 if !(test -n "${DISTRO}"); then
@@ -17,3 +19,5 @@ set -e
 
 set +e
 ./link.sh
+
+cd $CURRENT_DIR
