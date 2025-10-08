@@ -1,6 +1,6 @@
 echo "start ubuntu packages ..."
 
-sudo apt update && sudo apt install -y zsh git tmux unzip fontconfig fzf luarocks ripgrep
+sudo apt update && sudo apt install -y zsh git tmux unzip fontconfig fzf luarocks ripgrep golang-go
 
 #Installing nerd fonts
 curl -LO  https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/Mononoki.zip

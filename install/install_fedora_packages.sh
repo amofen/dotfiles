@@ -1,6 +1,6 @@
 echo "start fedora packages ..."
 
-sudo dnf update -y && sudo dnf upgrade -y && sudo dnf install -y zsh git tmux unzip fontconfig fzf luarocks ripgrep
+sudo dnf update -y && sudo dnf upgrade -y && sudo dnf install -y zsh git tmux unzip fontconfig fzf luarocks ripgrep golang-go
 
 #Installing nerd fonts
 curl -o  /tmp/Mononoki.zip -L https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/Mononoki.zip

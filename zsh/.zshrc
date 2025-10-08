@@ -19,9 +19,11 @@ if [[ -f ~/.bin/helios.sh ]]; then
     source ~/.bin/helios.sh
 fi
 
-
+#Aliases
+eval "$(~/.local/bin/mise activate zsh)"
 #Updating path 
 export PATH="$PATH:/opt/nvim-linux-x86_64/bin"
+export PATH="$PATH:$HOME/.local/bin"
 
 
 export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
